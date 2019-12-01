@@ -9,8 +9,10 @@ When the code is run it produces
     
 (2). The heat map is also displayed
       Not to show : Comment line 51 to 54
-(3). The graph of the PCA components are also shown.
+(3)(i). The graph of the PCA components are also shown.
       Not to show : Comment line 92 to 95
+      
+3(ii). The variance explained by the two components are also printed out.
       
       
 (4). KFold is used to fix KNN hyperparameters. Remove comments from line 58 to 72 to activate.
