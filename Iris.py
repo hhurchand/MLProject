@@ -97,9 +97,9 @@ plt.show()
 metricDict1={"GaussianNB":[],"KNN":[],"SVC rbf":[],"SVC poly":[],"SVC linear":[]}
 
 dataSet = {"original": iris_df,"pca": iris_pca_df}
-import random as ran
+#import random as ran
 for iter in range(1,51):
-    rs = ran.randint(1,100)
+#    rs = ran.randint(1,100)
     for Model_name,Model in ModelDict.items():
         for i in dataSet.keys():
 # Usual DataSet
@@ -107,7 +107,7 @@ for iter in range(1,51):
             dataType = i
             data_df = dataSet[i]
             X_train, X_test, y_train, y_test = train_test_split(data_df,iris.target, test_size=0.25,shuffle=True,
-                                                            random_state=rs)
+                                                            random_state=10)
 # PCA DataSet
             learned = Model.fit(X_train,y_train)
             predicted = learned.predict(X_test)
