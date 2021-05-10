@@ -146,4 +146,6 @@ ax2.set_title('Accuracy of different classifiers on 50 identical runs')
 ax2.set(ylim=(70,120))
 plt.show()
 
+
 # Changed the last line by adding this comment
+# These are changes I made from branch 1
